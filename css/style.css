@@ -1,0 +1,245 @@
+/* GLOBAL STYLES */
+
+/* Global color variables */
+:root {
+    --textLight: #cfcfcf;
+    --textDark: #707070;
+    --accent: #E49B0B;
+    --accentTransparent: rgb(228, 155, 11, 0.85);
+    --darkestColor: #131313;
+    --blackOverlay: rgba(0, 0, 0, 0.8);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--textDark);
+    line-height: 1.6;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2 {
+    color: var(--accent);
+    font-weight: bolder;
+}
+
+h2 {
+    margin-bottom: 50px;
+}
+
+h4 {
+    font-size: 0.9em;
+}
+
+/* styling for anchor tags, including hover effects */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--accent) !important;
+        text-decoration: none;
+    }
+}
+
+
+/* NAVIGATION STYLES */
+
+nav {
+    font-weight: bolder;
+}
+
+/* HERO SECTION */
+
+/* background styling for the header */
+.hero {
+    background-image: url("../images/aleks_header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* positioning */
+.heroTitle {
+    left: 60vw;
+    top: 50vh;
+    width: 30vw;
+}
+
+header p {
+    color: var(--textLight);
+}
+
+
+/* SECTIONS STYLE */
+
+/* shared styles for the about and contact sections */
+.about, .contact, .work {
+    padding: 70px 20vw 70px 20vw;
+    text-align: center;
+}
+
+
+/* MY WORK STYLE */
+
+/* styling for the work section */
+.work {
+    background-color: var(--darkestColor);
+}
+
+.work h2 {
+    color: var(--textLight);
+}
+
+
+/* shared styles for the images */
+#featuredWork, #pramed, #horiseon, #ksservice, #dadimas {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+/* backgrounds for individual items in work section */
+#featuredWork {
+    background-image: url("../images/trollsvselves.jpg");
+}
+
+#pramed {
+    background-image: url("../images/pramed.jpg");
+}
+
+#ksservice {
+    background-image: url("../images/ksservice.jpg");
+}
+
+#horiseon {
+    background-image: url("../images/horiseon.jpg");
+}
+
+#dadimas {
+    background-image: url("../images/dadimas.jpg");
+}
+
+
+
+/* Details - animation of the overlay */
+
+.details {
+    background-color: var(--accentTransparent);
+    height: 25%;
+    color: var(--darkestColor);
+
+    &:hover {
+        height: 100%;
+        transition: height 0.6s;
+        color: var(--darkestColor);
+    }
+}
+
+/* hidden description in the primary state */
+.description {
+    display: none;
+}
+
+/* show description when hovered */
+.details:hover .description {
+    display: block;
+    color: var(--darkestColor);
+    font-size: 0.8em;
+    line-height: 1.4;
+}
+
+
+/* CONTACT STYLES */
+
+/* styling for icons container */
+.contact ul {
+    list-style-type: none;
+}
+
+.contact a {
+    font-weight: bold;
+    text-transform: uppercase;
+} 
+
+
+/* styling for icons, including hover effects */
+i {
+    color: #131313;
+    /* fill: var(--textDark);
+    width: 32px;
+    height: 32px;
+    margin: 20px 10px 0 10px; */
+
+    &:hover {
+        fill: var(--accent);
+        transition: fill 0.3s;
+    }
+}
+
+
+.fas {
+    color: red;  /* Changes the icon color to red */
+    font-size: 24px; /* Increases the icon size */
+}
+
+/* RESPONSIVE STYLES */
+
+/* styles for screens up to 1000px in width */
+@media only screen and (max-width: 768px) {
+
+    /* add overlay and change position of the text and title in header */
+    header {
+        position: relative;
+        z-index: 1;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--blackOverlay); 
+            z-index: -1; 
+        }
+    }
+
+    .heroTitle {
+        left: 20vw;
+        top: 50vh;
+        width: 70vw;
+    }
+
+    /* change margins in the about and contact sections */
+    .about, .contact, .work {
+        padding: 70px 5vw 70px 5vw;
+    }
+
+
+    /* Adapt overlay and hide long description for mobile */
+
+    .details:hover {
+            height: 25%;
+    }
+
+
+    .details h3:after {
+        white-space:pre; 
+        content: '   \f08e';
+        font-family: FontAwesome;
+        font-size: 0.7em;
+        font-weight:normal;
+    }
+
+    .details:hover .description {
+        display: none;
+    }
+
+}
