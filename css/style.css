@@ -171,11 +171,8 @@ header p {
 
 /* styling for icons, including hover effects */
 i {
-    color: #131313;
-    /* fill: var(--textDark);
-    width: 32px;
-    height: 32px;
-    margin: 20px 10px 0 10px; */
+    color: var(--textDark);
+    /* margin: 20px 10px 0 10px; */
 
     &:hover {
         fill: var(--accent);
@@ -183,11 +180,6 @@ i {
     }
 }
 
-
-.fas {
-    color: red;  /* Changes the icon color to red */
-    font-size: 24px; /* Increases the icon size */
-}
 
 /* RESPONSIVE STYLES */
 
