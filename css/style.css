@@ -107,6 +107,7 @@ header p {
 
 /* backgrounds for individual items in work section */
 #featuredWork {
+    height: 550px;
     background-image: url("../images/trollsvselves.jpg");
 }
 
@@ -172,7 +173,6 @@ header p {
 /* styling for icons, including hover effects */
 i {
     color: var(--textDark);
-    /* margin: 20px 10px 0 10px; */
 
     &:hover {
         fill: var(--accent);
@@ -212,6 +212,10 @@ i {
     /* change margins in the about and contact sections */
     .about, .contact, .work {
         padding: 70px 5vw 70px 5vw;
+    }
+
+    #featuredWork {
+        height: 400px;
     }
 
 
