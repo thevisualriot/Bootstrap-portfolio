@@ -78,7 +78,12 @@ header p {
 /* SECTIONS STYLE */
 
 /* shared styles for the about and contact sections */
-.about, .work, .skills {
+.about, .skills {
+    padding: 70px 10vw 70px 10vw;
+    text-align: center;
+}
+
+.work {
     padding: 70px 20vw 70px 20vw;
     text-align: center;
 }
