@@ -48,6 +48,18 @@ a {
     }
 }
 
+button {
+    background-image: none !important;
+    background-color: var(--accent);
+
+    color: #E49B0B;
+}
+
+button:hover {
+    background-image: none !important;
+    background-color: var(--accent) !important;
+    box-shadow:0 4px 6px rgba(0, 0, 0, 0.7);
+}
 
 /* NAVIGATION STYLES */
 
@@ -64,12 +76,6 @@ nav {
     background-size: cover;
 }
 
-/* positioning */
-.heroTitle {
-    left: 60vw;
-    top: 50vh;
-    width: 30vw;
-}
 
 header p {
     color: var(--textLight);
@@ -178,7 +184,14 @@ img {
 
 
 
+footer {
+    background-color: var(--accent);
+    padding: 70px 20vw 70px 20vw;
+}
 
+footer a:hover {
+    color: var(--darkestColor) !important;
+}
 
 
 
@@ -187,7 +200,7 @@ img {
 /* styles for screens up to 1000px in width */
 @media only screen and (max-width: 992px) {
 
-    /* add overlay and change position of the text and title in header */
+    /* add overlay in header */
     header {
         position: relative;
         z-index: 1;
@@ -204,11 +217,6 @@ img {
         }
     }
 
-    .heroTitle {
-        left: 20vw;
-        top: 50vh;
-        width: 70vw;
-    }
 
     /* change margins in the about and contact sections */
     .about, .work {
