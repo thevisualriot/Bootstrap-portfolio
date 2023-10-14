@@ -79,11 +79,54 @@ header p {
 /* SECTIONS STYLE */
 
 /* shared styles for the about and contact sections */
-.about, .contact, .work {
+.about, .work, .skills {
     padding: 70px 20vw 70px 20vw;
     text-align: center;
 }
 
+/* SKILLS STYLE */
+.skills {
+    background-color: var(--accent);
+    color: var(--darkestColor);
+}
+
+.skills h2 {
+    color: var(--darkestColor);
+}
+
+.skills ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills ul li {
+    padding: 10px 20px;
+    border: #131313;
+    border: solid;
+}
+
+
+/* ABOUT & CONTACT STYLES */
+
+/* styling for icons container */
+.about ul {
+    list-style-type: none;
+}
+
+.about a {
+    font-weight: bold;
+    text-transform: uppercase;
+} 
+
+/* styling for icons, including hover effects */
+.about i {
+    color: var(--textDark);
+
+    &:hover {
+        fill: var(--accent);
+        transition: fill 0.3s;
+    }
+}
 
 /* MY WORK STYLE */
 
@@ -95,17 +138,6 @@ header p {
 .work h2 {
     color: var(--textLight);
 }
-
-
-/* shared styles for the images */
-/* #featuredWork, #pramed, #horiseon, #ksservice, #dadimas {
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-} */
-
-
 
 
 img {
@@ -150,90 +182,6 @@ img {
 
 
 
-
-
-/* backgrounds for individual items in work section */
-/* #featuredWork {
-    height: 550px;
-    background-image: url("../images/trollsvselves.jpg");
-}
-
-#pramed {
-    background-image: url("../images/pramed.jpg");
-}
-
-#ksservice {
-    background-image: url("../images/ksservice.jpg");
-}
-
-#horiseon {
-    background-image: url("../images/horiseon.jpg");
-}
-
-#dadimas {
-    background-image: url("../images/dadimas.jpg");
-} */
-
-
-
-/* Details - animation of the overlay */
-
-/* .details {
-    background-color: var(--accentTransparent);
-    height: 25%;
-    color: var(--darkestColor);
-
-    &:hover {
-        height: 100%;
-        transition: height 0.6s;
-        color: var(--darkestColor);
-    }
-} */
-
-/* hidden description in the primary state */
-/* .description {
-    display: none;
-} */
-
-/* show description when hovered */
-/* .details:hover .description {
-    display: block;
-    color: var(--darkestColor);
-    font-size: 0.8em;
-    line-height: 1.4;
-} */
-
-
-
-
-
-
-
-
-/* CONTACT STYLES */
-
-/* styling for icons container */
-.contact ul {
-    list-style-type: none;
-}
-
-.contact a {
-    font-weight: bold;
-    text-transform: uppercase;
-} 
-
-
-/* styling for icons, including hover effects */
-i {
-    color: var(--textDark);
-
-    &:hover {
-        fill: var(--accent);
-        transition: fill 0.3s;
-    }
-}
-
-
 /* RESPONSIVE STYLES */
 
 /* styles for screens up to 1000px in width */
@@ -263,10 +211,43 @@ i {
     }
 
     /* change margins in the about and contact sections */
-    .about, .contact, .work {
+    .about, .work {
         padding: 70px 5vw 70px 5vw;
     }
 
+    .about h2 {
+        text-align: center;
+    }
+
+    .about p {
+        text-align: center;
+    }
+
+    .about ul li {
+        display: inline;
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    .about ul {
+        margin-bottom: 70px;
+    }
+
+    .skills ul {
+        display: block; 
+    }
+    
+    .skills li {
+        margin: 10px 20px;
+        min-width: 25vw;
+    }
+
+    .skills li:last-child {
+        margin: 10px 8px 10px 20px !important;
+    }
+
+
+    /* WORK */
     #featuredWork img {
         height: 400px;
     }
