@@ -32,7 +32,7 @@ The section with my technical skills is a new feature of the portfolio, and was 
 ![Skills section on small screens](./images/readme/skills-sm.png)
 
 #### Work
-Work showcase was built using Bootstrap row-column grid, changing the display mode for big and small screens. I kept overlays which, when hovered, display longer description of the projects and act a links that sent users to the deployed applications. On mobile version, the long descriptions is hidden, and the overlay has a fixed size, to make it compatible with touchscreens.
+Work showcase was built using Bootstrap row-column grid, changing the display mode for big and small screens. Each work was added as a separate Bootstrap card. I kept overlays which, when hovered, display longer description of the projects and act a links that sent users to the deployed applications. On mobile version, the long descriptions is hidden, and the overlay has a fixed size, to make it compatible with touchscreens.
 
 >Work section on small screens
 ![Work section on small screens](./images/readme/work-sm.png)
