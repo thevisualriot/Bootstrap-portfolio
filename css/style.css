@@ -109,14 +109,13 @@ header p {
 
 
 img {
-    height: 400px;
     object-fit: cover;
     object-position: center center;
     width: 100%;
-    height: 100%;
+    height: 400px;
 }
 
-#featuredWork {
+#featuredWork img {
     height: 550px;
 }
 
@@ -238,7 +237,7 @@ i {
 /* RESPONSIVE STYLES */
 
 /* styles for screens up to 1000px in width */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
 
     /* add overlay and change position of the text and title in header */
     header {
@@ -268,7 +267,7 @@ i {
         padding: 70px 5vw 70px 5vw;
     }
 
-    #featuredWork {
+    #featuredWork img {
         height: 400px;
     }
 
