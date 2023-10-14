@@ -16,6 +16,7 @@ body {
     color: var(--textDark);
     line-height: 1.6;
     padding: 0;
+    margin: 0;
 }
 
 
@@ -200,6 +201,15 @@ footer a:hover {
             background-color: var(--blackOverlay); 
             z-index: -1; 
         }
+    }
+
+    /* smaller x-padding for sections to keep the content centered */
+    .about, .skills {
+        padding: 70px 5vw;
+    }
+
+    .work {
+        padding: 70px 0;
     }
 
     /* SKILLS: setting li elements in columns */
