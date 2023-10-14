@@ -42,3 +42,9 @@ Footer was added in this version of portfolio, and it contains a button with a b
 
 > Hover state of the button
 ![Alt text](./images/readme/footer.png)
+
+## ♿ Accessibility
+I'm an advocate for digital inclusivity. With that in mind, this portfolio is built with semantic HTML structures, enhanced with `alt` attributes to boost accessibility.
+
+## 📜 License
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
