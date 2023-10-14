@@ -1,7 +1,7 @@
 # Bootstrap-portfolio
 Welcome to my personal portfolio repository! This project was developed using Bootstrap 5, keeping in mind responsiveness  of the website.
 
-![Alt text](./images/readme/deployed.gif)
+![Scroll through the deployed portfolio](./images/readme/deployed.gif)
 
 ## 🚀 Live Version
 
@@ -17,31 +17,31 @@ A full-width header combined with smooth navigation. Click on a navigation item,
 The section about me was built using bootstrap grid to ensure responsiveness. On the small screens, two columns are displayed one after another to improve clarity.
 
 > mobile version of About section
-![Alt text](./images/readme/about-section.png)
+![mobile version of About section](./images/readme/about-section.png)
 
 #### Skills
 The section with my technical skills is a new feature of the portfolio, and was built using Bootstrap list class. To improve the design, all skills are put in boxes that display differently, depending on the screen size.
 
 >Skills section on large screens
-![Alt text](./images/readme/skills-lg.png)
+![Skills section on large screens](./images/readme/skills-lg.png)
 
 >Skills section on medium screens
-![Alt text](./images/readme/skills-md.png)
+![Skills section on medium screens](./images/readme/skills-md.png)
 
 >Skills section on small screens
-![Alt text](./images/readme/skills-sm.png)
+![Skills section on small screens](./images/readme/skills-sm.png)
 
 #### Work
 Work showcase was built using Bootstrap row-column grid, changing the display mode for big and small screens. I kept overlays which, when hovered, display longer description of the projects and act a links that sent users to the deployed applications. On mobile version, the long descriptions is hidden, and the overlay has a fixed size, to make it compatible with touchscreens.
 
 >Work section on small screens
-![Alt text](./images/readme/work-sm.png)
+![Work section on small screens](./images/readme/work-sm.png)
 
 #### Footer
 Footer was added in this version of portfolio, and it contains a button with a box shadow on hover, and copyrights information.
 
 > Hover state of the button
-![Alt text](./images/readme/footer.png)
+![Hover state of the button](./images/readme/footer.png)
 
 ## ♿ Accessibility
 I'm an advocate for digital inclusivity. With that in mind, this portfolio is built with semantic HTML structures, enhanced with `alt` attributes to boost accessibility.
