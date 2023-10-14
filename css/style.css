@@ -10,6 +10,7 @@
     --blackOverlay: rgba(0, 0, 0, 0.8);
 }
 
+/* body */
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--textDark);
@@ -17,11 +18,8 @@ body {
     padding: 0;
 }
 
-ul {
-    padding: 0;
-    margin: 0;
-}
 
+/* headers styles */
 h1, h2 {
     color: var(--accent);
     font-weight: bolder;
@@ -48,10 +46,10 @@ a {
     }
 }
 
+/* button style */
 button {
     background-image: none !important;
     background-color: var(--accent);
-
     color: #E49B0B;
 }
 
@@ -61,11 +59,6 @@ button:hover {
     box-shadow:0 4px 6px rgba(0, 0, 0, 0.7);
 }
 
-/* NAVIGATION STYLES */
-
-nav {
-    font-weight: bolder;
-}
 
 /* HERO SECTION */
 
@@ -75,7 +68,6 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 header p {
     color: var(--textLight);
@@ -100,25 +92,16 @@ header p {
     color: var(--darkestColor);
 }
 
-.skills ul {
-    display: flex;
-    justify-content: space-around;
-}
-
 .skills ul li {
     padding: 10px 20px;
-    border: #131313;
+    border: var(--darkestColor);
     border: solid;
 }
 
 
 /* ABOUT & CONTACT STYLES */
 
-/* styling for icons container */
-.about ul {
-    list-style-type: none;
-}
-
+/* link style */
 .about a {
     font-weight: bold;
     text-transform: uppercase;
@@ -129,10 +112,11 @@ header p {
     color: var(--textDark);
 
     &:hover {
-        fill: var(--accent);
-        transition: fill 0.3s;
+        color: var(--accent);
+        transition: color 0.3s;
     }
 }
+
 
 /* MY WORK STYLE */
 
@@ -145,7 +129,7 @@ header p {
     color: var(--textLight);
 }
 
-
+/* image style in work section */
 img {
     object-fit: cover;
     object-position: center center;
@@ -157,6 +141,7 @@ img {
     height: 550px;
 }
 
+/* description overlay animation */
 .details {
     background-color: var(--accentTransparent);
     height: 25%;
@@ -169,7 +154,7 @@ img {
     }
 }
 
-/* hidden description in the primary state */
+/* hide description in the primary state */
 .description {
     display: none;
 }
@@ -183,10 +168,9 @@ img {
 }
 
 
-
+/* FOOTER STYLE */
 footer {
     background-color: var(--accent);
-    padding: 70px 20vw 70px 20vw;
 }
 
 footer a:hover {
@@ -195,12 +179,13 @@ footer a:hover {
 
 
 
+
 /* RESPONSIVE STYLES */
 
-/* styles for screens up to 1000px in width */
+/* styles for screens up to 992px in width */
 @media only screen and (max-width: 992px) {
 
-    /* add overlay in header */
+    /* HEADER: add overlay in header */
     header {
         position: relative;
         z-index: 1;
@@ -217,57 +202,31 @@ footer a:hover {
         }
     }
 
-
-    /* change margins in the about and contact sections */
-    .about, .work {
-        padding: 70px 5vw 70px 5vw;
-    }
-
-    .about h2 {
-        text-align: center;
-    }
-
-    .about p {
-        text-align: center;
-    }
-
-    .about ul li {
-        display: inline;
-        text-align: center;
-        margin: 0 20px;
-    }
-
-    .about ul {
-        margin-bottom: 70px;
-    }
-
-    .skills ul {
-        display: block; 
-    }
-    
+    /* SKILLS: setting li elements in columns */
     .skills li {
         margin: 10px 20px;
-        min-width: 25vw;
+        min-width: 200px;
     }
 
     .skills li:last-child {
         margin: 10px 8px 10px 20px !important;
     }
 
-
-    /* WORK */
+    /* WORK: changing height of the featured work picture */
     #featuredWork img {
         height: 400px;
     }
 
-
-    /* Adapt overlay and hide long description for mobile */
-
+    /* WORK: fix overlay and hide description */
     .details:hover {
             height: 25%;
     }
 
+    .details:hover .description {
+        display: none;
+    }
 
+    /* WORK: add 'open in new tab' icon */
     .details h3:after {
         white-space:pre; 
         content: '   \f08e';
@@ -275,9 +234,4 @@ footer a:hover {
         font-size: 0.7em;
         font-weight:normal;
     }
-
-    .details:hover .description {
-        display: none;
-    }
-
 }
